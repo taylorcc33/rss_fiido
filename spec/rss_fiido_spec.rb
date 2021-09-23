@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
 RSpec.describe RssFiido do
-  it "has a version number" do
+  it 'has a version number' do
     expect(RssFiido::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  describe '.grab_feed' do
+    it 'grabs a url' do
+      expect(RssFiido.grab_feed).to eql('http://www.polygon.com/rss/index.xml')
+    end
   end
 end
