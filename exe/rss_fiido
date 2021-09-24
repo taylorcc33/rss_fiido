@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require_relative '../lib/rss_fiido'
+
+RssFiido.grab_feed

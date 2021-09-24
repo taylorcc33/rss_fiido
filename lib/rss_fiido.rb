@@ -10,6 +10,7 @@ module RssFiido
 
   def self.grab_feed
     File.foreach('db/rss-links.txt') do |url|
+      puts url
       return url
     end
   end

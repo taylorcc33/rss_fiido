@@ -1,1 +1,3 @@
 http://www.polygon.com/rss/index.xml
+https://kotaku.com/rss
+https://www.rockpapershotgun.com/feed/
