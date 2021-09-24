@@ -6,12 +6,15 @@ require 'open-uri'
 # Top level module for gem
 module RssFiido
   class Error < StandardError; end
-  # Your code goes here...
 
-  def self.grab_feed
-    File.foreach('db/rss-links.txt') do |url|
-      puts url
-      return url
+  # main class
+  class Feed 
+    def self.show_feeds
+      feed_urls = []
+      File.foreach('db/rss-links.txt', chomp: true) do |url|
+        feed_urls.push url
+      end
+      return feed_urls
     end
   end
 end
